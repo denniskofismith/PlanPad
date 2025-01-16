@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:planpad02/pages/notes.dart';
+import 'package:planpad02/pages/notes_content.dart';
 import 'package:planpad02/pages/todo.dart';
 import 'package:planpad02/theme/lightmode.dart';
 
@@ -16,10 +17,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: lightmode,
+      darkTheme: darkmode,
       debugShowCheckedModeBanner: false,
       routes: {
         '/todo': (context) => TodoPage(),
         '/notes': (context) => NotePage(),
+        '/note_content': (context) => NotesContentPage(),
       },
       home: NotePage(),
     );
